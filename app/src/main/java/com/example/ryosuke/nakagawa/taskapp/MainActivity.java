@@ -14,6 +14,7 @@ import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import org.w3c.dom.Text;
 
@@ -54,10 +55,12 @@ public class MainActivity extends AppCompatActivity {
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onClick(iew) {
+                Toast.makeText(getApplicationContext(),"こんにちは",Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(MainActivity.this,InputActivity.class);
 
                 startActivity(intent);
+
             }
         });
 
